@@ -27,7 +27,7 @@ export const getHomeData = () =>  {
 
 export const loadHomeMore = (page) =>  {
   return (dispatch) => {
-    axios.get('/api/homeList.json?page=' + page).then((res) => {
+    axios.get('api/homeList.json?page=' + page).then((res) => {
       const data = res.data.data;
       dispatch(loadHomeDataMoreAction(data, page + 1));
     }).catch(() => {
