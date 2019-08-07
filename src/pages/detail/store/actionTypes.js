@@ -1,1 +1,0 @@
-export const GET_DETAIL_DATA = 'detail_get_detail_data';
