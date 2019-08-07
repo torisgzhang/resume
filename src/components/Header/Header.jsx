@@ -70,7 +70,7 @@ class Header extends PureComponent {
           <Logo className="logo" />
         </Link>
         <Nav className="nav clearfix">
-          <NavItem className="fl active">首页1</NavItem>
+          <NavItem className="fl active">首页1111</NavItem>
           <NavItem className="fl"><i className="iconfont">&#xe615;</i>下载App</NavItem>
           {
             loginState ?
