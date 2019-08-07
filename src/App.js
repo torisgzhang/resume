@@ -1,5 +1,5 @@
 import React, { lazy, Suspense, Component } from 'react';
-import { BrowserRouter, Route, Switch, Redirect, Prompt } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from '@/store';
 import { GlobalStyle } from '@/common/styles/globalStyle';
@@ -22,7 +22,7 @@ class App extends Component {
           <GlobalStyle />
           <IconfontStyle />
           <ScrollTop />
-          <BrowserRouter>
+          <Router>
             <div>
               <Header />
               <Route path="/" exact component={Home} />
@@ -32,7 +32,7 @@ class App extends Component {
                 <Route path="/write" exact component={Write} />
               </Suspense>
             </div>
-          </BrowserRouter>
+          </Router>
         </div>
       </Provider>
     );
